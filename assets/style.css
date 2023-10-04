@@ -100,10 +100,11 @@ body {
 .gallery .nav {
 	justify-content: center;
 }
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+/* ligne modifiée pour réparer le css du filtre actif (.nav-link.active => .nav-link.active-tag) */
+.nav-pills .nav-link.active-tag, .nav-pills .show > .nav-link {
 	color: #fff;
 	background-color: #BEB45A;
-	border-radius:0 ;
+	/* border-radius:0 ; on conserve le border-radius de 0.25rem */
 }
 .nav-pills .nav-link {
 	color: #000
