@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <title>Photographe Nina Carducci Bordeaux</title>
-    <link rel="icon" href="assets/images/instagram.png">
+    <link rel="icon" href="assets/images/instagram.png" />
     <meta name="description" content="photographe Nina Carducci à Bordeaux" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
@@ -21,7 +21,24 @@
       crossorigin="anonymous"
     ></script>
     <script src="./assets/maugallery.js"></script>
-    <script src="./assets/scripts.js"></script>
+    <script src="./assets/scripts.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Photographe",
+        "image": [
+        src="./assets/images/nina.jpg"
+         ],
+        "name": "Photographe Nina Carducci",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "postalCode": "33200",
+          "addressCountry": "FR"
+        }
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -120,7 +137,8 @@
       <div class="picture left">
         <img
           src="./assets/images/nina.jpg"
-          
+          width="560"
+          height="auto"
           alt="photo de la photographe nina carducci"
         />
       </div>
